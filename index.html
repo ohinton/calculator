@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/scripts.js"></script>
     <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <div id="initially-showing">
-      <p>Are you happy with your calculation. If so, <span class ="clickable">click here!</span></p>
-    </div>
+    <div class="container">
+      <h1>Calculator</h1>
+      <form class="calculator">
+        <div class="form-group">
+          <label for="add1">1st number:</label>
+          <input id="add1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="add2">2nd number:</label>
+          <input id="add2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Add!</button>
+      </form>
+      <hr>
+      <div id="output-add">
 
-    <div id="initially-hidden">
-      <p><span class ="clickable">Click here!</span> to hide the happy calculator!</p>
-      <img src="image/happycalculator.png" alt="Happy calculator">
-    </div>
+      </div>
 
+      <form class="calculator">
+        <div class="form-group">
+          <label for="subtract1">1st number:</label>
+          <input id="subtract1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="subtract2">2nd number:</label>
+          <input id="subtract2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Subtract!</button>
+      </form>
+
+
+      <hr>
+      <div id="output-subtract">
+      </div>
+
+        <form class="calculator">
+          <div class="form-group">
+            <label for="multiply1">1st number:</label>
+            <input id="multiply1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="multiply2">2nd number:</label>
+            <input id="multiply2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Multiply!</button>
+        </form>
+        <hr>
+        <div id="output-multiply">
+
+      </div>
+    </div>
   </body>
 </html>
